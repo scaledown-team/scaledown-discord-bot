@@ -1,0 +1,19 @@
+version: 1.0
+
+runtime: python311
+
+build:
+  commands:
+    build:
+      - pip install --no-cache-dir -r discord-bot/requirements.txt
+
+run:
+  command: python discord-bot/bot.py
+  network:
+    port: 8080
+    env: PORT
+  env:
+    - name: DOCS_PATH
+      value: "."
+    - name: PORT
+      value: "8080"

@@ -1,0 +1,12 @@
+.git
+.claude
+.env
+.env.example
+pictures/
+writing-content/
+node_modules/
+__pycache__/
+*.pyc
+discord-bot/SETUP.md
+discord-bot/.env
+discord-bot/.env.example
