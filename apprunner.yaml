@@ -5,7 +5,7 @@ runtime: python311
 build:
   commands:
     build:
-      - pip install --no-cache-dir -r discord-bot/requirements.txt
+      - pip install -r discord-bot/requirements.txt
 
 run:
   command: cd discord-bot && python bot.py
