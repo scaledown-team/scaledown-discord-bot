@@ -8,12 +8,12 @@ build:
       - pip install --no-cache-dir -r discord-bot/requirements.txt
 
 run:
-  command: python discord-bot/bot.py
+  command: cd discord-bot && python bot.py
   network:
     port: 8080
     env: PORT
   env:
     - name: DOCS_PATH
-      value: "."
+      value: "/app/source"
     - name: PORT
       value: "8080"
